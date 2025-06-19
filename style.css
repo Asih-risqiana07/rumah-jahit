@@ -1,0 +1,190 @@
+body {
+  background-image: url('background2.JPG'); /* Gambar background */
+  background-size: cover;                   /* Menutupi seluruh layar */
+  background-repeat: no-repeat;             /* Tidak diulang */
+  background-attachment: fixed;             /* Tetap saat discroll */
+  background-position: center;              /* Posisi tengah */
+}
+
+
+header {
+  background-color: #f5fffe;
+  color: #00c8ad;
+  padding: 5px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #0b7567;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffd700; /* Warna kuning emas saat hover */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+
+/* Banner */
+.banner {
+  background-image: url('background.jpeg'); /* Ganti dengan file sesuai namanya */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.5em;
+}
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  display: none;
+}
+section h2 {
+  font-size: 28px;
+  color: #000000; /* judul ungu */
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 18px;
+  color: #000000; /* isi teks tetap ungu tua */
+}
+
+.galeri-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.galeri-container img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #92cdc5;
+}
+.galeri-item img {
+  width: 200px;          /* Lebar seragam */
+  height: 200px;         /* Tinggi seragam */
+  object-fit: cover;     /* Crop rapi tanpa merusak proporsi */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.maps iframe {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.testimoni blockquote {
+  background-color: #92cdc5;
+  border-left: 5px solid #9ae4d3;
+  margin: 20px 0;
+  padding: 15px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #f0f8f7;
+  color: #105249;
+  text-align: center;
+  padding: 0px;
+  margin-top: 300px;
+}
+.halaman {
+  display: none; /* Semua bagian disembunyikan dulu */
+}
+#testimoni {
+  padding: 40px 20px;
+  background-color: #e2f5f0;
+  text-align: center;
+}
+
+.testimoni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimoni-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimoni-card p {
+  font-style: italic;
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.testimoni-card h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #99004d;
+}
